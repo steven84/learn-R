@@ -17,5 +17,6 @@ AnalysisData <- data.frame(ID,Q1n,Q2n,Q3n,Q4n,Q5n,Q6n,Q7n,Q8n,Q9n,Q10n,
 detach(Q15_Data)
 
 library(ggplot2)
-library(gcookbook)
-barplot(AnalysisData$Q1n)
+
+attach(Q15_Data)
+barplot(Q1n)
